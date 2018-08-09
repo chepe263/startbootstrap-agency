@@ -75,7 +75,8 @@ gulp.task('css:minify', ['css:compile'], function() {
       suffix: '.min'
     }))
     .pipe(gulp.dest('./css'))
-    .pipe(browserSync.stream());
+    //.pipe(browserSync.stream())
+	;
 });
 
 // CSS
@@ -109,6 +110,9 @@ gulp.task('browserSync', function() {
   browserSync.init({
     server: {
       baseDir: "./"
+	  ,open: false
+	  ,notify: false
+	  ,proxy: 'zaireega.vm:80',
     }
   });
 });
@@ -117,5 +121,5 @@ gulp.task('browserSync', function() {
 gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./js/*.js', ['js']);
-  gulp.watch('./*.html', browserSync.reload);
+  //gulp.watch('./*.html', browserSync.reload);
 });

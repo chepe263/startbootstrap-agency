@@ -13,15 +13,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #FBB040;
 }
 
 a:hover {
-  color: #fec503;
+  color: #fa9b0e;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #FBB040 !important;
 }
 
 h1,
@@ -70,13 +70,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #FBB040;
+  border-color: #FBB040;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #faa11b !important;
+  border-color: #faa11b !important;
   color: white;
 }
 
@@ -85,12 +85,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #FBB040;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #FBB040;
   text-shadow: none;
 }
 
@@ -103,7 +103,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #212529;
+  background-color: #e9ecef;
 }
 
 #mainNav .navbar-toggler {
@@ -113,17 +113,17 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #FBB040;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #FBB040;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #fa9b0e;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -131,12 +131,12 @@ img::-moz-selection {
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
-  color: white;
+  color: black;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #FBB040;
 }
 
 @media (min-width: 992px) {
@@ -147,7 +147,10 @@ img::-moz-selection {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    flex-direction: column !important;
+    /*&.navbar-shrink #marquesina{
+		 display: none;
+	}*/
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -161,7 +164,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: #e9ecef;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -169,9 +172,15 @@ img::-moz-selection {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1199px;
+  }
+}
+
 header.masthead {
   text-align: center;
-  color: white;
+  color: #495057;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -250,7 +259,7 @@ header.masthead .intro-text .intro-heading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(251, 176, 64, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -454,7 +463,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: #FBB040;
 }
 
 .timeline > li .timeline-image h4 {
@@ -625,7 +634,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #FBB040;
   box-shadow: none;
 }
 
@@ -691,9 +700,13 @@ ul.social-buttons li a {
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: #212529;
+  background-color: #00386C;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #FBB040;
+}
+
+section#clients {
+  background-color: #adb5bd;
 }

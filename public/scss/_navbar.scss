@@ -1,6 +1,6 @@
 // Styling for the navbar
 #mainNav {
-  background-color: $gray-900;
+  background-color: $gray-200;
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -28,7 +28,7 @@
         font-weight: 400;
         padding: 0.75em 0;
         letter-spacing: 1px;
-        color: white;
+        color: black;
         @include heading-font;
         &.active,
         &:hover {
@@ -46,7 +46,8 @@
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    //background-color: transparent;
+	  flex-direction: column !important;
     .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
@@ -63,11 +64,19 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-900;
+      background-color: $gray-200;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
       }
     }
+	/*&.navbar-shrink #marquesina{
+		 display: none;
+	}*/
   }
+}
+@media (min-width: 1200px){
+	.container {
+		max-width: 1199px;
+	}
 }
