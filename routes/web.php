@@ -11,7 +11,7 @@
 |
 */
 
-Route::any('/mailer', function () {
+Route::post('/mailer', function () {
 	//dd(request()->input());
 	$res  = \Mail::to('contactme@zairee.ga')
 	->send(new \App\Mail\ContactMe(request()->input()));
