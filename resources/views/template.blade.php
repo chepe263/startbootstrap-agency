@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title id="page_title">{{ env('APP_NAME', 'ZAIREE.GA')}}</title>
 
@@ -99,7 +100,7 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>1976</h4>
+                    <h4>1998</h4>
                     <h4 class="subheading">Desde el inicio</h4>
                   </div>
                   <div class="timeline-body">
@@ -141,8 +142,8 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>El futuro</h4>
-                    <h4 class="subheading">Conquistar el mundo</h4>
+                    <h4>El futuro:</h4>
+                    <h4 class="subheading">Dominación Mundial</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">Tomaremos por la fuerza la sinergia y la convertiremos en energía positiva que nos permita aumentar la productividad y tenacidad al momento de completar negocios. Juntos tendremos el poder de superar obstáculos.</p>
@@ -183,16 +184,6 @@
                     <i class="fa fa-external-link"></i>
                   </a>
                 </li>
-                <!--li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li-->
               </ul>
             </div>
           </div>
@@ -211,51 +202,8 @@
             </div>
           </div>
 	  </div>
-        <!--div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
-        </div-->
       </div>
     </section>
-
-    <!-- Services -->
-    <!--section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">E-Commerce</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-        </div>
-      </div>
-    </section-->
 
     <!-- Portfolio Grid -->
     <section class="bg-light" id="suppliers">
@@ -332,7 +280,8 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" action="{{ route('emal_send') }}" method="post">
+				@csrf
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -399,12 +348,12 @@
     <!-- Plugin JavaScript -->
     <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Custom scripts for this template -->
+    <script src="/js/agency.min.js"></script>
+
     <!-- Contact form JavaScript -->
     <script src="/js/jqBootstrapValidation.js"></script>
     <script src="/js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="/js/agency.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123735569-1"></script>
 <script>

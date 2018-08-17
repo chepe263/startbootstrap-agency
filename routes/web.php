@@ -11,6 +11,15 @@
 |
 */
 
+Route::any('/mailer', function () {
+	//dd(request()->input());
+	$res  = \Mail::to('contactme@zairee.ga')
+	->send(new \App\Mail\ContactMe(request()->input()));
+	\Log::info($res);
+	return $res;
+    
+})->name("emal_send");
+
 Route::get('/', function () {
     return view('template');
 });
