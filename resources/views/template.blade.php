@@ -37,7 +37,6 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-		<marquee>0494-10-14445: Guillermo José Chávez Bautista</marquee>		
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
 			<img src="/img/logos/zaireega-vertical.png" rel="Zaireega" style="max-width: 8em;"/>
@@ -96,7 +95,7 @@
             <ul class="timeline">
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="/img/about/juan_perez.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="/img/about/juan_perez.jpg?p=8" alt="The CEO and Supreme Leader">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -104,7 +103,7 @@
                     <h4 class="subheading">Desde el inicio</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Zaireega fue fundado por Guillermo Chávez y su equipo de siete personalidades. Usted es la superestrella, estamos aqui para alcanzar sus objetivos. El reflejo de su brillo nos da la luz suficiente para seguir adelante.</p>
+                    <p class="text-muted">Zaireega fue fundado por Marío Heck y su equipo de siete personalidades. Usted es la superestrella, estamos aqui para alcanzar sus objetivos. El reflejo de su brillo nos da la luz suficiente para seguir adelante.</p>
                   </div>
                 </div>
               </li>
@@ -319,9 +318,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-			<img src="/img/logos/umg.jpg" style="width: 20em;" />
-			<P>y conoceréis la verdad y la verdad os hará libres</P>            
+          <div class="col-md-4">          
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
